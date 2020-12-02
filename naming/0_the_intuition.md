@@ -1,4 +1,4 @@
-# A idéia
+# A intuição
 
 Código se lê como um livro.
 
