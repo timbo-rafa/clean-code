@@ -4,6 +4,7 @@
 - O que faz
 - Como é utilizada
 - Não precisa de comentários adicionais
+- Nomear é um processo
 
 Qual o significado de d?
 
@@ -39,7 +40,7 @@ String n
 ```
 
 ## Evitar ambiguidades e palavras vazias: Info, Data, variable, object
-```c
+```java
 getClient();
 getClientInfo();
 getClientObject();
@@ -81,8 +82,8 @@ if (paycheck.isPosted())
 - When constructores are overloaded, use static factory methods with names that describe their arguments:
 
 ```java
-Complex pivotPoint = Complex.fromRealNumber(23.0);
 // Complex pivotPoint = new Complex(23.0);
+Complex pivotPoint = Complex.fromRealNumber(23.0);
 ```
 
 ## Não faça piadas
@@ -95,7 +96,25 @@ quando você quer dizer:
 ```java
 deleteItems
 ```
+Mais exemplos:
 ```java
 kill() // whack()
 abort() // eatMyShorts()
 ```
+## Uma palavra por conceito
+
+Escolha uma palavra para um conceito abstrato e use somente ela.
+
+`get`,`retrieve`, ou `fetch`?
+
+`Controller`, `Driver`, ou `Manager`?
+
+Um **dicionário consistente** facilita muito a leitura do seu código.
+
+Pun/Trocadilho = Essencialmente uma palavra para duas ideias diferentes. Cancelado.
+
+`add()` - adiciona/concatena dois valores existentes e retorna esse novo valor
+
+Adicionar um único valor a uma coleção é uma semântica diferente.
+
+Usar `add` seria um trocadilho => `insert()` / `append()`
